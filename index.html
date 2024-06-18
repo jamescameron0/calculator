@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <calculator>
+        <input id="display" readonly>
+        <keys>
+            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay(Math.PI)">π</button>
+            <button onclick="appendToDisplay('Math.E')">e</button>
+            <button onclick="appendToDisplay('Math.log(')"class="operator-btn">ln</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="appendToDisplay('(')">(</button>
+            <button onclick="appendToDisplay(')')">)</button>
+            <button onclick="calculate()"class="equal-btn">=</button>
+            <button onclick="appendToDisplay('Math.pow(')"class="operator-btn">^</button>
+            <button onclick="appendToDisplay('Math.sqrt(')"class="operator-btn">√</button>
+            <button onclick="clearDisplay()" class="clear-btn">Cl</button>
+        </keys>
+    </calculator>
+
+    <script src="index.js"></script>
+</body>
+</html>
